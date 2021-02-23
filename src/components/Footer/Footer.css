@@ -1,0 +1,50 @@
+
+.footernav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    justify-content: end;
+    overflow-y: hidden;
+
+}
+
+.wrap {
+    height: 8vh;
+    position: relative;
+    top: 60vh;
+}
+.footer-logo{
+    color: white;
+    cursor: pointer;
+    font-family: 'Gugi', sans-serif;
+}
+
+.FooterItems {
+    background: black;
+    height: 220px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10% 40% 40%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 1rem;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+a {
+    font-family: "BenchNine", sans-serif;
+    text-decoration: none;
+    color: white;
+
+}
+
