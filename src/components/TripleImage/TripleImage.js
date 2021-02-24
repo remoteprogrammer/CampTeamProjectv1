@@ -18,7 +18,7 @@ function TripleImageComponent() {
             </div>
           </div>
           </Link>
-          <Link to="/directory">
+          <Link to="/directoryTents">
           <div className="column">
             <div className="imgWrap">
               <img src={tenthome} alt="tent" />

@@ -8,7 +8,7 @@ export const MenuItems = [
     {
         title: 'SHOP',
         title1: 'SHOP',
-        url: '#TripleImageComponent',
+        url: 'directory',
         cName: 'nav-links'
     },
     {

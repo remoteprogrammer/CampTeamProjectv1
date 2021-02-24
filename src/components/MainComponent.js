@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Switch, Route, Redirect, withRouter} from 'reac
 import Directory from "../pages/shop/DirectoryComponent";
 import DirectoryBackPack from "../pages/shop/DirectoryComponentBP";
 import DirectorySleepingBags from "../pages/shop/DirectoryComponentSB";
+import DirectoryTents from "../pages/shop/DirectoryComponentTents";
 import ProductInfo from "../pages/shop/ProductInfoComponent";
 import NewArrivals from './NewArrivals/NewArrivals'
 import Hero from './Hero/Hero'
@@ -15,7 +16,7 @@ import Cart from '../pages/cart/Cart.js'
 import { render } from '@testing-library/react'
 import { connect } from "react-redux";
 import {fetchProducts} from "../redux/ActionCreators";
-import { actions } from "react-redux-form";
+
 
 
 
@@ -105,6 +106,11 @@ const mapStateToProps = (state) => {
                   exact
                   path="/directorySleepingBags"
                   render={() => <DirectorySleepingBags products={this.props.products} />}
+                />
+                 <Route
+                  exact
+                  path="/directoryTents"
+                  render={() => <DirectoryTents products={this.props.products} />}
                 />
                  
                 <Route path="/directory/:productId" component={ProductWithId} />
