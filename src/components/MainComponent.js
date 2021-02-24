@@ -6,6 +6,8 @@ import HeaderComponent from './HeaderComponent.js'
 import HomeComponent from './HomeComponent.js'
 import {BrowserRouter as Router, Switch, Route, Redirect, withRouter} from 'react-router-dom'
 import Directory from "../pages/shop/DirectoryComponent";
+import DirectoryBackPack from "../pages/shop/DirectoryComponentBP";
+import DirectorySleepingBags from "../pages/shop/DirectoryComponentSB";
 import ProductInfo from "../pages/shop/ProductInfoComponent";
 import NewArrivals from './NewArrivals/NewArrivals'
 import Hero from './Hero/Hero'
@@ -94,6 +96,17 @@ const mapStateToProps = (state) => {
                   path="/directory"
                   render={() => <Directory products={this.props.products} />}
                 />
+                 <Route
+                  exact
+                  path="/directoryBackPack"
+                  render={() => <DirectoryBackPack products={this.props.products} />}
+                />
+                 <Route
+                  exact
+                  path="/directorySleepingBags"
+                  render={() => <DirectorySleepingBags products={this.props.products} />}
+                />
+                 
                 <Route path="/directory/:productId" component={ProductWithId} />
                 <Route exact path="/about" component={AboutComponent} />
             <Route exact path="/contact" component={ContactComponent} />

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../../shared/baseUrl';
 import "./shop.css";
-import TripleImageComponent from '../../components/TripleImage/TripleImage.js'
 
 
 function RenderDirectoryItem({product}) {
@@ -25,9 +24,10 @@ function RenderDirectoryItem({product}) {
 
 
 
-function Directory (props) {
+function DirectorySleepingBags (props) {
 
-    
+    /* const Viewproducts = BackPackProducts; */
+
     const BackPackProducts = props.products.products.filter(backpacks => backpacks.catagory === 'back packs');
     console.log(BackPackProducts);
 
@@ -39,7 +39,7 @@ function Directory (props) {
 
 
 
-    const directory = tentProducts.map(product =>{
+    const directory = BackPackProducts.map(product =>{
         
         return (
             
@@ -74,10 +74,8 @@ console.log(directory);
             <div className="row">
                 <div className="col">
                     <h2>Products</h2>
-                    <TripleImageComponent />
                     <hr />
                 </div>
-                
             </div>
             <div className="row">
                 {directory}
@@ -87,4 +85,4 @@ console.log(directory);
     
 }
 
-export default Directory;
+export default DirectorySleepingBags;

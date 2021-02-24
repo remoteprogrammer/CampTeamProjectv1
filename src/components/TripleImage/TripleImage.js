@@ -10,19 +10,23 @@ function TripleImageComponent() {
   return (
     <div className="wrap">
       <div className="row">
-        <Link to="/shop">
+      <Link to="/directoryBackPack">
           <div className="column">
             <div className="imgWrap">
               <img src={backpackmanhome} alt="backpack" />
               <div className="centered">Backpacks</div>
             </div>
           </div>
+          </Link>
+          <Link to="/directory">
           <div className="column">
             <div className="imgWrap">
               <img src={tenthome} alt="tent" />
               <div className="centered">Tents</div>
             </div>
           </div>
+          </Link>
+          <Link to="/directorySleepingBags">
           <div className="column">
             <div className="imgWrap">
               <img src={sleepingbaghome} alt="sleepingbag" />
