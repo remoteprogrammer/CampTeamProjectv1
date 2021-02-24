@@ -39,7 +39,7 @@ function Directory (props) {
 
 
 
-    const directory = tentProducts.map(product =>{
+    const directory = props.products.products.map(product =>{
         
         return (
             
