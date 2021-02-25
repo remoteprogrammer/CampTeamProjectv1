@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Container, Col, Row, Media } from "reactstrap";
+import Image from "react-bootstrap/Image";
 import backpackmanhome from "./backpackmanhome.png";
 import tenthome from "./tenthome.jpg";
 import sleepingbaghome from "./sleepingbaghome.jpg";
